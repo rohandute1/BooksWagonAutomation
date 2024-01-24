@@ -14,7 +14,7 @@ public class HomePageTest extends TestBase {
         super();
     }
     @BeforeTest
-    public void home_Page_Setup(){
+    public void home_Page_Setup() throws InterruptedException {
         start_Test_Execution();
         bookswagonLoginPage = new BookswagonLoginPage();
         bookswagonHomePage = bookswagonLoginPage.loginBookswagon(properties.getProperty("mobileNumber"),properties.getProperty("password"));
