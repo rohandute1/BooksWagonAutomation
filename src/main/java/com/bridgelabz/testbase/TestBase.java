@@ -9,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -23,8 +22,6 @@ public class TestBase {
             properties = new Properties();
             FileInputStream fileInputStream = new FileInputStream("E:\\java\\BookswagonAutomation\\src\\main\\java\\com\\bridgelabz\\config\\configFile.properties");
             properties.load(fileInputStream);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

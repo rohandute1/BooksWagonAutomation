@@ -1,0 +1,8 @@
+<suite name = "Suite">
+    <test name = "Test">
+        <classes>
+            <class name = "com.bridgelabz.testbookswagon.LoginPageTest">
+            </class>
+        </classes>
+    </test>
+</suite>
